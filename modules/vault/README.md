@@ -26,11 +26,11 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_credentials"></a> [credentials](#input\_credentials) | Credentials for the appropriate database. | <pre>object({<br/>    username = string,<br/>    password = string<br/>  })</pre> | n/a | yes |
-| <a name="input_database_name"></a> [database\_name](#input\_database\_name) | Name of the database the users belong to. | `string` | n/a | yes |
+| <a name="input_access_keys"></a> [access\_keys](#input\_access\_keys) | Credentials for the appropriate instance. | <pre>object({<br/>    name       = string,<br/>    access_key = string,<br/>    secret_key = string<br/>  })</pre> | n/a | yes |
+| <a name="input_instance_name"></a> [instance\_name](#input\_instance\_name) | Name of the instances the users belong to. | `string` | n/a | yes |
 | <a name="input_metadata"></a> [metadata](#input\_metadata) | Optional metadata to attach to the secret data. | `map(any)` | `null` | no |
 | <a name="input_password_store_paths"></a> [password\_store\_paths](#input\_password\_store\_paths) | Paths to write the secret to. | `list(string)` | n/a | yes |
-| <a name="input_vault_kv2_mount"></a> [vault\_kv2\_mount](#input\_vault\_kv2\_mount) | Path where KV2 secret engine is mounted in HashiCorp Vault. | `string` | `"secret"` | no |
+| <a name="input_vault_kv2_mount"></a> [vault\_kv2\_mount](#input\_vault\_kv2\_mount) | Path where KV2 secret engine is mounted in Vault. | `string` | `"secret"` | no |
 
 ## Outputs
 
